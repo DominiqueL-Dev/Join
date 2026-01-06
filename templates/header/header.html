@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/join/templates/header/header.css" />
+    <link rel="stylesheet" href="/join/style.css" />
+    <link rel="stylesheet" href="/join/css/fonts.css" />
+    <script defer src="/join/js/script.js"></script>
+    <script defer src="/join/js/header.js"></script>
+    <script defer src="/join/js/contacts.js"></script>
+    <script defer src="/join/js/mainContactPart.js"></script>
+
+    <title>Header</title>
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="max-width">
+        <span>Kanban Project Management Tool</span>
+        <div class="headerNav">
+          <a class="headerHelp" href="/join/pages/help.html">
+            <img class="helpIcon" src="/join/assets/img/help.png" alt="" />
+          </a>
+          <a onclick="toggleMenu()" id="profileName" class="headerProfile">
+            <span onload="headerinitials()" id="initials"></span>
+          </a>
+          <div id="subMenu" class="hidden">
+            <a class="hidden" href="/join/pages/help.html">Help</a>
+            <a href="/join/pages/legale-notice.html">Legal Notice</a>
+            <a href="/join/pages/data-protection.html">Privacy Policy</a>
+            <a href="/join/index.html">Log out</a>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/join/assets/img/logodunkel.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/join/style.css" />
+    <link rel="stylesheet" href="/join/css/signUp.css" />
+    <link rel="stylesheet" href="/join/css/fonts.css" />
+    <script defer src="/join/js/signUplogIn.js"></script>
+    <script defer src="/join/script.js"></script>
+    <title>Join</title>
+  </head>
+  <body onload="singUpInit()">
+    <div class="headerLogo">
+      <img src="/join/assets/img/logodunkel.png" alt="" />
+    </div>
+    <div class="signUpContainer">
+      <a class="signUpArrowLink" href="/join/index.html">
+        <img
+          class="arrowSignUpImg"
+          src="/join/assets/icons/arrow-left-line.png"
+          alt=""
+        />
+      </a>
+      <h1>Sign Up</h1>
+      <hr />
+      <form class="formSignUp" onsubmit="return false">
+        <div class="signUpInput">
+          <input
+            id="name"
+            class="name"
+            type="text"
+            placeholder="Name"
+            required
+          />
+          <input
+            id="email"
+            class="email"
+            type="email"
+            placeholder="Email"
+            required
+          />
+          <div id="emailError" class="signUpEmailError"></div>
+          <div class="passwordContainer">
+            <input
+              id="signupPassword"
+              class="password"
+              type="password"
+              placeholder="Password"
+            />
+            <img
+              onclick="showSignupPassword()"
+              class="passwordSignupIcon"
+              src="/join/assets/icons/lock.png"
+              alt=""
+            />
+          </div>
+          <div class="passwordContainer">
+            <input
+              id="confirmPassword"
+              class="password"
+              type="password"
+              placeholder="Confirm Password"
+            />
+            <img
+              onclick="showConfirmPassword()"
+              class="passwordSignupConfirmIcon"
+              src="/join/assets/icons/lock.png"
+              alt=""
+            />
+          </div>
+          <div id="passwordError" class="signUpPasswordError"></div>
+          <div class="checkboxSignUp">
+            <input
+              id="checkboxSingUp"
+              type="checkbox"
+              name="checkboxPrivacyPolicy"
+            />
+            <label for=""
+              >I accept the
+              <a href="/join/pages/data-protection.html">Privacy Policy</a>
+            </label>
+          </div>
+          <div id="checkboxError" class="signUpCheckboxError"></div>
+        </div>
+        <div class="signUpButton">
+          <button onclick="toTheRegistration()" id="" class="button">
+            Sign up
+          </button>
+          <div class="pupup-signUp d-none" id="singUpPopup">
+            <img src="/join/assets/icons/youSignedUpSuccessfully.png" alt="" />
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <footer class="footerContent">
+      <a href="/join/pages/data-protection-Nouser.html">Privacy Policy</a>
+      <a href="/join/pages/legale-notice-Nouser.html">Legal notice</a>
+    </footer>
+  </body>
+</html>

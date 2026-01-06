@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/join/mobileTemplates/header/headerMobile.css" />
+    <link rel="stylesheet" href="/join/style.css" />
+    <link rel="stylesheet" href="/join/css/fonts.css" />
+    <script defer src="/join/script.js"></script>
+    <title>HeaderMobile</title>
+  </head>
+  <body>
+    <header class="headerMobile">
+      <div class="headerMobileContent max-width">
+        <img class="headerMobileImg" src="/join/assets/img/logodunkel.png" alt="" />
+        <a onclick="toggleMenu()" id="profileName" class="headerProfile">
+          <span onload="headerInitialsMobile()" id="initialsMobile"></span>
+        </a>
+        <div id="subMenuMobile" class="hidden">
+          <a class="firstLinkHover" href="/join/pages/help.html">Help</a>
+          <a href="/join/pages/legale-notice.html">Legal Notice</a>
+          <a href="/join/pages/data-protection.html">Privacy Policy</a>
+          <a class="lastLinkHover" href="/join/index.html">Log out</a>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>

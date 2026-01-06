@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/join/assets/img/logodunkel.png" type="image/x-icon" />
+    <title>Contacts</title>
+    <link rel="stylesheet" href="/join/css/contacts.css" />
+    <link rel="stylesheet" href="/join/css/contactsPopUp.css" />
+    <link rel="stylesheet" href="/join/style.css" />
+    <link rel="stylesheet" href="/join/css/fonts.css" />
+    <script defer src="/join/js/contacts.js"></script>
+    <script defer src="/join/js/mainContactPart.js"></script>
+    <script defer src="/join/js/contactsPopUp.js"></script>
+    <script defer src="/join/js/templates.js"></script>
+    <script defer src="/join/js/contactNewAndEditPopUpTemplates.js"></script>
+    <script defer src="/join/js/includeTemplates.js"></script>
+    <script defer src="/join/script.js"></script>
+  </head>
+
+  <body onload="contactInit()">
+    <div w3-include-html="/join/templates/header/header.html"></div>
+    <div w3-include-html="/join/templates/sidebar/sidebar.html"></div>
+    <div w3-include-html="/join/mobileTemplates/header/headerMobile.html"></div>
+    <div w3-include-html="/join/mobileTemplates/footer/footerMobile.html"></div>
+    
+    <div id="contact" class="contacts-container">
+      <div class="contacts-list-div" id="contactsListDiv">
+        <div class="add-contact-btn-div">
+          <button onclick="addNewContact()" class="add-contact-btn" id="addContactBtn">
+            Add new contact
+            <img src="/join/assets/icons/person_add.png" alt="" />
+          </button>
+        </div>
+        <div class="scrollbar" id="scrollbar"></div>
+      </div>
+
+      <div class="contact-right-area">
+        <div class="contact-right-area-header">
+          <h1>Contacts</h1>
+          <div class="contact-right-area-header-dividing-line-content">
+            <div class="contact-right-area-header-dividing-line"></div>
+            <h2>Better with a team</h2>
+          </div>
+        </div>
+
+        <div class="contact-details-div" id="contactDetailsDiv"></div>
+      </div>
+    </div>
+    <div class="succesfull-popup d-none"><span>Contact succesfully created</span></div>
+    <div class="mobileAddButton">
+      <img onclick="mobileAddNewContact()" src="/join/assets/icons/add-button.png" alt="">
+    </div>
+    <div id="mobileContactContainer" class="mobileContactContainer d-none">
+      <div class="mobile-contact-right-area">
+        <div class="close-mobile-contact-area">
+          <img onclick="closePopUp()" src="/join/assets/icons/arrow-left-line.png" alt="">
+        </div>
+        <div class="mobile-contact-right-area-header">
+          <h1>Contacts</h1>
+          <div class="mobile-contact-right-area-header-dividing-line-content">
+            <hr>
+            <h2>Better with a team</h2>
+          </div>
+        </div>
+
+        <div class="mobile-contact-details-div" id="mobileContactDetailsDiv"></div>
+      
+      </div>
+      <div class="mobileOptionsButton">
+        <img onclick="mobileToggleOptions()" src="/join/assets/icons/options.png" alt="">
+      </div>
+    </div>
+    <div id="mobileToggleOptions" class="hidden">
+      <div onclick="mobileEditContact()" class="contact-details-div-icon-edit">
+        <img src="/join/assets/icons/edit-pencil.png" alt="">
+        Edit
+      </div>
+      <div onclick="mobileDeleteContact()" class="contact-details-div-icon-edit img">
+        <img src="/join/assets/icons/deleteContact.png" alt="">
+        Delete
+      </div>
+    </div>
+    <div id="popup"></div>
+  </body>
+</html>
