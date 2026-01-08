@@ -1,10 +1,25 @@
 body {
   background-color: #f6f7f8;
-  display: flex;
+  /* display: flex; */
   height: 100vh;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
+}
+
+.page-wrapper {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  min-height: 100vh;
+
+  display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+
+  position: relative;
 }
 
 .headerLogo {
