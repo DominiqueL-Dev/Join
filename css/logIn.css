@@ -1,10 +1,25 @@
 body {
   background-color: #f6f7f8;
-  display: flex;
+  /* display: flex; */
   height: 100vh;
-  flex-direction: column;
+  /* flex-direction: column;
   align-items: center;
+  justify-content: space-between; */
+}
+
+.page-wrapper {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+
+  position: relative;
 }
 
 .animationBg {
@@ -88,6 +103,10 @@ body {
   justify-content: flex-end;
   padding: 28px 63px 0px 0px;
   position: fixed;
+
+  max-width: 1920px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .signUpButtonContainer {
@@ -130,6 +149,8 @@ body {
   margin: auto auto;
   flex-direction: column;
   align-items: center;
+
+  margin: auto;
 }
 
 .logInContainer h1 {
@@ -260,6 +281,9 @@ input:focus {
   bottom: 0;
   height: 65px;
   width: 265px;
+
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .footerContent a {
@@ -321,7 +345,7 @@ input:focus {
       transform: translate(-50%, -50%);
       width: 274px;
       height: 335px;
-      background-image: url('/join/assets/img/logohell.png');
+      background-image: url("/join/assets/img/logohell.png");
     }
 
     50% {
@@ -330,7 +354,7 @@ input:focus {
       transform: translate(-50%, -50%);
       width: 274px;
       height: 335px;
-      background-image: url('/join/assets/img/logohell.png');
+      background-image: url("/join/assets/img/logohell.png");
     }
 
     100% {
@@ -339,7 +363,7 @@ input:focus {
       transform: translate(0, 0);
       width: 100px;
       height: 100px;
-      background-image: url('/join/assets/img/logodunkel.png');
+      background-image: url("/join/assets/img/logodunkel.png");
     }
   }
 
