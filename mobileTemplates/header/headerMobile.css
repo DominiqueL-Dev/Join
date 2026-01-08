@@ -48,7 +48,7 @@
   list-style: none;
   position: absolute;
   z-index: 999;
-  right: 30px;
+  /* right: 30px; */
   top: 100px;
   border-radius: 20px 0px 20px 20px;
   background: #2a3647;
@@ -78,5 +78,9 @@
 @media screen and (max-width: 992px) {
   .headerMobile {
     display: flex;
+  }
+
+  #subMenuMobile {
+    right: 30px;
   }
 }
